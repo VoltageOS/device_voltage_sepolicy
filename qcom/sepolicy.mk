@@ -10,16 +10,16 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/qcom/private
+    device/voltage/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/qcom/dynamic \
-    device/lineage/sepolicy/qcom/system
+    device/voltage/sepolicy/qcom/dynamic \
+    device/voltage/sepolicy/qcom/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/qcom/dynamic \
-    device/lineage/sepolicy/qcom/vendor
+    device/voltage/sepolicy/qcom/dynamic \
+    device/voltage/sepolicy/qcom/vendor
 endif
 
 ifeq (,$(filter device/qcom/sepolicy-legacy-um/legacy/vendor/common device/qcom/sepolicy_vndr/legacy-um/legacy/vendor/common, $(BOARD_VENDOR_SEPOLICY_DIRS)))
