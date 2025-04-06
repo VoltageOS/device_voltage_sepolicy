@@ -23,3 +23,6 @@ allow system_app selinuxfs:file r_file_perms;
 
 # Custom ROM Hide
 allow system_app custom_rom_hide_data_file:file { create open read write getattr setattr unlink };
+
+# Compact HUN
+allow system_app system_prop:property_service set;
