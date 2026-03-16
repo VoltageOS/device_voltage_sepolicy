@@ -53,3 +53,6 @@ set_prop(platform_app, bootanim_system_prop)
 
 # Compact HUN	
 allow platform_app system_prop:property_service set;
+
+# Custom ROM Hide
+allow platform_app custom_rom_hide_data_file:file { create open read write getattr setattr unlink };
