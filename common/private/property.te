@@ -13,6 +13,3 @@ system_internal_prop(recovery_update_prop)
 
 # Global cleartext feature
 system_restricted_prop(system_exported_cleartext_prop);
-
-# Pixel props
-system_public_prop(pixelprops_prop)
